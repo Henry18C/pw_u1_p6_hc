@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/calculadora.css">
+    <script src="../js/calculadoraCompleta.js" defer></script>
+    
+
 </head>
 
 <body>
@@ -17,26 +20,27 @@
     <section>
         <div class="container">
             <div class="calculadora">
-                <div class="display">98x9</div>
+                <div class="display" id="disp">0</div>
 
-                <button class="col-2">C</button>
-                <button>&larr;</button>
-                <button>%</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>X</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>-</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>+</button>
-                <button class="col-2">0</button>
-                <button>.</button>
-                <button>=</button>
+                <button class="col-2" onclick="clearDisplay()">C</button>
+                <button onclick="deleteLast()">&larr;</button>
+                <button onclick="input('/')">%</button>
+                <button onclick="input('7')">7</button>
+                <button onclick="input('8')">8</button>
+                <button onclick="input('9')">9</button>
+                <button onclick="input('X')">X</button>
+                <button onclick="input('4')">4</button>
+                <button onclick="input('5')">5</button>
+                <button onclick="input('6')">6</button>
+                <button onclick="input('-')">-</button>
+                <button onclick="input('1')">1</button>
+                <button onclick="input('2')">2</button>
+                <button onclick="input('3')">3</button>
+                <button onclick="input('+')">+</button>
+                <button class="col-2" onclick="input('0')">0</button>
+                <button onclick="input('.')">.</button>
+                <button onclick="calculate()">=</button>
+                
 
 
 
