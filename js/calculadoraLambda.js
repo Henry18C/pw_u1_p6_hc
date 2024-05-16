@@ -283,4 +283,18 @@ const {nombre, direccion:{callePrincipal,barrio}}= profesor1; /// en un solol pa
 console.log(barrio);
 */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
