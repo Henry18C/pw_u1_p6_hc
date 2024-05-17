@@ -1,0 +1,53 @@
+.container {
+    /* siempre debe tener esto la declaracion del container*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p:before {
+    /* selector tipo pseudo clase*/
+    content: attr(type);
+    /*muestra el contenido del atributo del elemento P*/
+    display: block;
+    /*decimos que le p ocupe un bloque completo*/
+    margin: 3px 2px;
+    font-size: 15;
+    color: #1B7F79;
+
+
+}
+body{
+    background-color: #747F7F;
+}
+
+input {
+    width: 300px;
+    border: none;
+    border-bottom: 2px solid #1B7F79;
+    background: none;
+
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid #1B7F79;
+}
+
+h2{
+    
+    margin: 10px 2px;
+    width: 180px;
+    color:  #1B7F79;
+    border-bottom:3px solid #FF4858;
+
+}
+.form{
+    width: 350px;
+    height: 380px;
+    background: #72F2EB ;
+    border-radius: 10px;
+    padding: 25px 35px;
+    box-shadow: 0 0 100px 5px #000 ;
+}
+
